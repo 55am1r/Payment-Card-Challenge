@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PaymnetForm</title>
+</head>
+
+<body>
+    <div class="paymentform">
+        <h1>Settings</h1>
+        <div class="headers">
+            <h4 class="account">Account
+                <hr>
+            </h4>
+            <h4 class="payment"> Payment
+                <hr>
+            </h4>
+        </div>
+        <div class="savedcards">
+            <h4>Saved Cards:</h4>
+            <div class="mastercard">
+                <label for="mastercard">
+                    <img src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-logo-mastercard-logo-png-vector-download-19.png"
+                        alt="mastercard.jpg">
+                </label>
+                <input type="tel" name="mastercard" id="mastercard" value="xxxx xxxx xxxx 4357" disabled 
+                    oncopy="return false" oncut="return false"></input>
+                <a href="#">Remove Card</a>
+            </div>
+            <div class="visacard">
+                <label for="visacard">
+                    <img src="https://www.freepnglogos.com/uploads/visa-card-logo-9.png" alt="mastercard.jpg">
+                </label>
+                <input type="tel" name="mastercard" id="mastercard" value="xxxx xxxx xxxx 5467" disabled 
+                    oncopy="return false" oncut="return false"></input>
+                <a href="#">Remove Card</a>
+            </div>
+        </div>
+        <div class="addnewcard">
+            <h4>Add New Card:</h4>
+            <form action="#">
+                <div class="nameoncard">
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Name on Card" required>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
