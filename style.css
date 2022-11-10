@@ -8,7 +8,7 @@
 }
 
 .paymentform {
-    width: 30vw;
+    width: 80vw;
     height: 70vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-inline: auto;
@@ -152,8 +152,14 @@
     left: 6px;
     font-size: 1.6rem;
 } */
-
-.paymentform .addnewcard .nameoncard input {
+.paymentform .addnewcard .row{
+    width: 100%;
+    display: flex;
+}
+.paymentform .addnewcard .nameoncard input,
+.paymentform .addnewcard .row .cardnumber input,
+.paymentform .addnewcard .row .Exp-Date input, 
+.paymentform .addnewcard .row .cvv input{
     width: 100%;
     border: 0;
     outline: 0;
@@ -162,28 +168,105 @@
     height: 100%;
     box-shadow: none;
     font-size: 2rem;
-
+    margin-top: 10px;
 }
-.paymentform .addnewcard .nameoncard input::-webkit-input-placeholder{
+
+.paymentform .addnewcard .row .cardnumber input {
+    width: 180%;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.paymentform .addnewcard .row .Exp-Date input {
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 0px;
+    
+}
+.paymentform .addnewcard .row .cvv input {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 50px;
+}
+.paymentform .addnewcard .nameoncard input:focus::-webkit-input-placeholder {
     transform: translateY(-2rem);
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     color: black;
     visibility: visible !important;
 }
-.paymentform .addnewcard .nameoncard input:focus{
-    border-bottom-color: rgb(91, 91, 91);
-    border-bottom-width: 2.5px ;
+
+.paymentform .addnewcard .cardnumber input:focus::-webkit-input-placeholder {
+    transform: translateY(-2rem);
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    visibility: visible !important;
 }
-.paymentform .addnewcard .nameoncard input:invalid {
+.paymentform .addnewcard .cvv input:focus::-webkit-input-placeholder {
+    transform: translateY(-2rem);
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    visibility: visible !important;
+}
+.paymentform .addnewcard .nameoncard input:focus {
+    border-bottom-color: rgb(91, 91, 91);
+    border-bottom-width: 2.5px;
+}
+
+.paymentform .addnewcard .cardnumber input:focus {
+    border-bottom-color: rgb(91, 91, 91);
+    border-bottom-width: 2.5px;
+}
+.paymentform .addnewcard .cvv input:focus {
+    border-bottom-color: rgb(91, 91, 91);
+    border-bottom-width: 2.5px;
+}
+
+.paymentform .addnewcard .nameoncard input:focus:invalid {
+    border-bottom-color: red;
+}
+
+.paymentform .addnewcard .cardnumber input:focus:invalid {
+    border-bottom-color: red;
+}
+.paymentform .addnewcard .cvv input:focus:invalid {
     border-bottom-color: red;
 }
 .paymentform .addnewcard .nameoncard input:valid {
     border-bottom-color: rgb(0, 63, 19);
     border-bottom-width: 2.5px;
 }
-.paymentform .addnewcard .nameoncard input:focus .paymentform .addnewcard .nameoncard label{
-    font-size: 0.5rem;
-    top:-14px;
-    left: -6px;
+
+.paymentform .addnewcard .cardnumber input:valid {
+    border-bottom-color: rgb(0, 63, 19);
+    border-bottom-width: 2.5px;
+}
+.paymentform .addnewcard .cvv input:valid {
+    border-bottom-color: rgb(0, 63, 19);
+    border-bottom-width: 2.5px;
+}
+.paymentform .addnewcard .submit{
+    width: 100%;
+    margin-top: 100px;
+    margin-inline: auto;  
+
+}
+.paymentform .addnewcard .submit input{
+    width: 100%;
+    text-decoration: none;
+    height: 50px;
+    border-width: 0px;
+    border-radius: 4px;
+    background-color: rgb(20, 121, 20);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.paymentform .addnewcard .submit input:active{
+    transform: translateY(0.12rem);
 }
